@@ -54,6 +54,10 @@ public class DLBasePluginActivity extends Activity implements DLPlugin {
      */
     protected Activity mProxyActivity;
 
+    public Activity getProxyActivity(){
+        return mProxyActivity==null?this:mProxyActivity;
+    }
+
     /**
      * 等同于mProxyActivity，可以当作Context来使用，会根据需要来决定是否指向this<br/>
      * 可以当作this来使用

@@ -9,7 +9,7 @@
         <artifactId>sdk-android</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.ryg.dynamicload</groupId>
+    <groupId>com.wyfbilling</groupId>
     <artifactId>com.ryg.dynamicload</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>

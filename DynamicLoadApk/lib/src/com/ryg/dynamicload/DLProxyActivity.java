@@ -35,6 +35,10 @@ import com.ryg.dynamicload.internal.DLProxyImpl.DLProxy;
 
 public class DLProxyActivity extends Activity implements DLProxy {
 
+    public Activity getPluginActivity() {
+        return (Activity)mRemoteActivity;
+    }
+
     protected DLPlugin mRemoteActivity;
     private DLProxyImpl impl = new DLProxyImpl(this);
     private DLPluginManager mPluginManager;

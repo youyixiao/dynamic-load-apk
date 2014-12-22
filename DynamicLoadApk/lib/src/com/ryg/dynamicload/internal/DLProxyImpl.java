@@ -79,9 +79,15 @@ public class DLProxyImpl {
         mTheme = mResources.newTheme();
         mTheme.setTo(superTheme);
 
+
+
         // TODO: handle mActivityInfo.launchMode here in the future.
     }
 
+    /**
+     * 最核心的，委托代理来管理插件的生命周期。最重要的就是创建插件了。
+     * @param intent
+     */
     public void onCreate(Intent intent) {
         mPackageName = intent.getStringExtra(DLConstants.EXTRA_PACKAGE);
         mClass = intent.getStringExtra(DLConstants.EXTRA_CLASS);

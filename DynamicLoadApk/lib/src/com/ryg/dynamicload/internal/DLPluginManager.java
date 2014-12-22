@@ -23,6 +23,7 @@ import java.util.HashMap;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -212,5 +213,7 @@ public class DLPluginManager {
             context.startActivity(dlIntent);
         }
     }
+
+
 
 }
